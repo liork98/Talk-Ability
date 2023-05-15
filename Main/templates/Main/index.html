@@ -2,18 +2,18 @@
 {% load static %}
 <html>
 
-<head>
-    <div class="hero-image">
-        <img src="{% static 'Screenshot_17.jpg' %}" alt="Screenshot">
-    </div>
+<head>    
 	<title>TalkAbility</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}">
-    <script src="talkAbility.js"></script>
+	<link rel="stylesheet" href="index.css">
+
 </head>
 
 <body>
+	<div class="hero-image">
+        <img src="Screenshot_17.jpg" alt="Screenshot">
+    </div>
 <div id="allform">
 
 <div class="contact-form">
@@ -42,21 +42,26 @@
 		<label for="urgency">Urgency:</label>
 		<input type="urgency" id="urgency" name="urgency" required>
 	  </div>
+
+
     <div class="department-select" style="width:200px;">
 
   <select>
     <option value="0">Department:</option>
-    <option value="1">14K</option>
-    <option value="2">18K</option>
-    <option value="3">22K</option>
+    <option value="1">Sales</option>
+    <option value="2">Subscription</option>
+    <option value="3">Technical</option>
+	<option value="4">Billing</option>
+	<option value="5">Other</option>
   </select>
 </div>
 
 
     <div class="form-group">
 		<label>
-            Is he an existing customer?
 			<input type="checkbox" name="terms" value="agree" required>
+            Is he an existing customer?
+			
 		</label>
 	</div>
 
@@ -69,10 +74,14 @@
 
 
 <div id="window">
+	<div id="buttons">
 
 		<button id="button1">Summary</button>
         <button id="button3">Transcription</button>
 		<button id="button2">Original Language</button><br/><br/>
+	</div>
+
+		
     <p id="text" readonly>text1</p>
 	</div>
 
@@ -95,14 +104,12 @@
 		});
 	</script>
         <br/><br/><button type="submit">Application successfully processed</button>
-
+		<br/><br/><button type="submit">Record a message</button>
 
 </body>
 
 
-<footer>
-<div id="footer"></div>
 
-</footer>
+
 
 </html>

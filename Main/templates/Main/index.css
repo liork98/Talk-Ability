@@ -1,0 +1,405 @@
+
+/* Reset CSS */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fcfcfc;
+}
+
+.hero-image {
+  position: absolute;
+  margin-left: -90px;
+  z-index: 1;
+  top: -100px;
+
+}
+
+.hero-image img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1050px; /* adjust this value as needed */
+  height: 400px; /* adjust this value as needed */
+  z-index: 1;
+  left:200px;
+  opacity: 1;
+  background-repeat: no-repeat;
+}
+
+#buttons{
+  margin-left: 29%;
+  
+}
+
+#allform {
+    top:300px;
+    padding-top: 151px;
+    background-color: #fcfcfc;
+
+}
+
+/* Sections */
+section {
+	padding: 4rem 2rem;
+	background-color: #ffffff
+
+}
+
+#about_body {
+    text-align: center;
+    text-shadow: #69727c;
+	background-color: #f9f9f9;
+}
+
+
+form h2 {
+  margin-top: 70px;
+}
+
+#features ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	grid-gap: 1.6rem;
+  font-weight: 200;
+}
+ /* START FEAUTRES-circle-wrapper  */
+ .circle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-weight: 200;
+}
+
+
+/* END FEATURES-circle-wrapper */
+
+
+#portfolio .gallery {
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 2rem;
+
+}
+
+#portfolio .gallery img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+/* email newsletter start */
+
+form {
+
+    /* flex-direction: column; */
+    /*top:5400px;*/
+    align-items: center;
+    text-align: center;
+    font-weight: 200;
+
+    
+  }
+
+#contact-form{
+
+   /* margin-top:500px;*/
+}
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    font-family: 'Varela';
+    text-align: center;
+  }
+  
+  button[type="Submit"] {
+    background-color: #590e88;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 21px
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #cab0db;
+  }
+  /* email newsletter end */
+
+  .communication-apps
+  {
+    align-items: center;
+    text-align: center;
+    opacity: 20%;
+    padding-bottom: 20px;
+
+  }
+
+
+  .checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 550px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 3px;
+  }
+  
+  .checkbox-container input:checked + .checkmark {
+    background-color: #f3219f;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-container input:checked + .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    
+  }
+    /* Hero section */
+
+    
+      
+
+/*eden add */
+.window {
+  width: 400px;
+  height: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: relative;
+  left: 500px;
+  top: 10px;
+
+}
+
+.toolbar {
+  background-color: #eee;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#button1,
+#button2,
+#button3 {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 5px;
+  margin-right: -58px;
+  
+  margin-left: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#button1:hover,
+#button2:hover,
+#button3:hover {
+  background-color: #ccc;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #bb0468;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked:before {
+  content: "\2714";
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  line-height: 20px;
+}
+
+#text {
+
+  border-color: black;
+  /*background-color: #f3219f;*/
+  word-wrap: break-word;
+  height: 273px;
+  width: 500px;
+  
+border-width: 2px;
+  border-style: solid; /* Add border style */
+  margin-left: 397px;
+
+}
+
+.form-group {
+   background-color: #fcfcfc;
+  
+   border-radius: 5px;
+   margin-bottom: 0px;
+   text-align: center;
+ }
+
+.content {
+  margin-top: 30px;
+}
+
+.contact-form {
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	text-align: center;
+  margin-top: 105px;
+
+  }
+
+  .contact-form h2 {
+	font-size: 32px;
+	margin-bottom: 10px;
+  }
+
+  .contact-form form {
+	display: inline-block;
+	text-align: left;
+  }
+
+  .contact-form .form-group {
+	margin-bottom: 10px;
+
+  }
+
+  .contact-form label {
+	display: block;
+	margin-bottom: 5px;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="phone-number"],
+  .contact-form input[type="location"],
+  .contact-form input[type="source-lan"],
+   .contact-form input[type="urgency"],
+  .contact-form textarea {
+	width: 250px;
+	padding: 20px;
+	border-radius: 10px;
+	border: none;
+	box-shadow: none;
+	background-color: #c675a2;
+
+
+  }
+
+  .contact-form textarea {
+	resize: vertical;
+	width: 350px;
+  }
+
+
+  .contact-form button[type="submit"] {
+	background-color: #bb0468;
+	color: #fcfcfc;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+  }
+
+  .contact-form button[type="submit"]:hover {
+	background-color: #494949;
+  }
+
+
+  .window button{
+      left:500px;
+  }
+
+  button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+
+.department-select {
+  width: 200px;
+  margin-left:520px;
+  margin-top: 27px;
+  margin-bottom: 22px;
+}
+
+.department-select select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.department-select select:focus {
+  border-color: #000;
+}
