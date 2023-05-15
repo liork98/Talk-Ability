@@ -1,37 +1,43 @@
 
 /* Reset CSS */
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fcfcfc;
 }
 
 .hero-image {
   position: absolute;
-
-  width: 1000px;
-  height: 990px;
+  margin-left: -90px;
   z-index: 1;
+  top: -100px;
+
 }
-
-
 
 .hero-image img {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 1500px;
-  height: 400px;
+  width: 1050px; /* adjust this value as needed */
+  height: 400px; /* adjust this value as needed */
   z-index: 1;
+  left:200px;
+  opacity: 1;
+  background-repeat: no-repeat;
+}
 
-}/**/
+#buttons{
+  margin-left: 29%;
+  
+}
 
 #allform {
-    top:500px;
-    padding-top: 400px;
-    /*margin-top: 400px;*/
-background-color: #fcfcfc;
+    top:300px;
+    padding-top: 151px;
+    background-color: #fcfcfc;
 
 }
 
@@ -135,18 +141,19 @@ form {
   }
   
   button[type="Submit"] {
-    background-color: #69727c;
-    color: #d9d9d9;
+    background-color: #590e88;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 21px
   }
   
   button[type="submit"]:hover {
-    background-color: #b2b2b2;
+    background-color: #cab0db;
   }
   /* email newsletter end */
 
@@ -235,50 +242,65 @@ form {
   right: 0;
 }
 
-#button1, #button2, #button3{
+#button1,
+#button2,
+#button3 {
   background-color: #fff;
   border: 1px solid #ccc;
   padding: 5px 5px;
-  margin-right: 100px;
+  margin-right: -58px;
+  
   margin-left: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#button1:hover,
+#button2:hover,
+#button3:hover {
+  background-color: #ccc;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #bb0468;
+  border-radius: 3px;
+  outline: none;
+  border: none;
   cursor: pointer;
 }
 
-/*
-#button1 {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 5px 5px;
-  margin-right: 20px;
-  cursor: pointer;
+input[type="checkbox"]:checked:before {
+  content: "\2714";
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  line-height: 20px;
 }
 
-#button2 {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 5px 5px;
-  margin-left: 100px;
-  cursor: pointer;
-}
-*/
 #text {
 
   border-color: black;
   /*background-color: #f3219f;*/
   word-wrap: break-word;
-  height: 500px;
+  height: 273px;
   width: 500px;
+  
 border-width: 2px;
   border-style: solid; /* Add border style */
-  margin-left: 450px;
+  margin-left: 397px;
 
 }
 
 .form-group {
    background-color: #fcfcfc;
-   padding: 20px;
+  
    border-radius: 5px;
-   margin-bottom: 20px;
+   margin-bottom: 0px;
    text-align: center;
  }
 
@@ -291,6 +313,7 @@ border-width: 2px;
 	border-radius: 5px;
 	margin-bottom: 20px;
 	text-align: center;
+  margin-top: 105px;
 
   }
 
@@ -325,7 +348,7 @@ border-width: 2px;
 	border-radius: 10px;
 	border: none;
 	box-shadow: none;
-	background-color: #fff;
+	background-color: #c675a2;
 
 
   }
@@ -337,7 +360,7 @@ border-width: 2px;
 
 
   .contact-form button[type="submit"] {
-	background-color: #cccccc;
+	background-color: #bb0468;
 	color: #fcfcfc;
 	padding: 10px 20px;
 	border-radius: 5px;
@@ -360,89 +383,23 @@ border-width: 2px;
   margin: 0 auto;
 }
 
-  .METAL-select {
-  position: relative;
-  font-family: 'Varela';
-  width: 2000px;
-  margin-bottom: 20px;
-  margin: 0 auto;
-  margin-top: 20px;
-  user-select: none;
-
+.department-select {
+  width: 200px;
+  margin-left:520px;
+  margin-top: 27px;
+  margin-bottom: 22px;
 }
 
-.MetalSelectionTitle{
-  position:absolute;
-  margin-top: 30px;
-  color: #4f4f4f;
-  margin-left: 135px;
-  padding-bottom: 200px;
-  font-family: 'Varela';
+.department-select select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
 }
 
-.METAL-select select {
-
-  display: none; /*hide original SELECT element: */
-}
-
-.METAL-select select:hover{
-  opacity: 40%;
-  background-color: green;
-
-}
-
-.select-selected {
-  background-color: #d19898;
-
-}
-
-/* Style the arrow inside the select element: */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-
-}
-
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-
-}
-
-/* style the items (options), including the selected item: */
-.select-items div,.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* Style items (options): */
-.select-items {
-  position: absolute;
-  background-color: rgb(55, 126, 0);
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-
-}
-
-.select-items hover {
-  background-color: rgb(13, 255, 0);
-}
-
-/* Hide the items when the select box is closed: */
-.select-hide {
-  display: none;
-
+.department-select select:focus {
+  border-color: #000;
 }
